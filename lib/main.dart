@@ -3,6 +3,10 @@ import 'splash_screen.dart';
 // Import other screens as you create them
 // import 'screens/onboarding_screen.dart';
 // import 'screens/login_screen.dart';
+import "screens/discover_onboarding.dart";
+import "screens/findbest_routes_onboarding.dart";
+import "screens/ride_onboarding.dart";
+import "screens/login_screen.dart";
 
 void main() {
   runApp(const PeiwayApp());
@@ -119,48 +123,13 @@ class PeiwayApp extends StatelessWidget {
       // Routes configuration
       routes: {
         '/': (context) => const SplashScreen(),
-        '/onboarding': (context) => const OnboardingScreen(),
-        '/login': (context) => const LoginScreen(),
-        '/home': (context) => const HomeScreen(),
+        '/discover_onboarding': (context) => const DiscoverOnboarding(),
+        '/findbest_routes_onboarding': (context) =>
+            const FindBestRoutesOnboarding(),
+        'ride_onboarding': (context) => const RideOnboarding(),
+        '/login_screen': (context) => const LoginScreen(),
       },
       initialRoute: '/',
-    );
-  }
-}
-
-// Placeholder screens (create these separately)
-class OnboardingScreen extends StatelessWidget {
-  const OnboardingScreen({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('Onboarding')),
-      body: const Center(child: Text('Onboarding Screen')),
-    );
-  }
-}
-
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('Login')),
-      body: const Center(child: Text('Login Screen')),
-    );
-  }
-}
-
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('Home')),
-      body: const Center(child: Text('Home Screen')),
     );
   }
 }
