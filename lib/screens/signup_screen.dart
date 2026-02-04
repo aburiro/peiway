@@ -63,12 +63,12 @@ class _SignupScreenState extends State<SignupScreen> {
       backgroundColor: Colors.white,
       body: SafeArea(
         child: SingleChildScrollView(
-          padding: const EdgeInsets.symmetric(horizontal: 24),
+          padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Column(
             children: [
               const SizedBox(height: 40),
               _buildLogo(),
-              const SizedBox(height: 60),
+              const SizedBox(height: 40),
               _buildFormSection(),
             ],
           ),
@@ -82,10 +82,10 @@ class _SignupScreenState extends State<SignupScreen> {
     return Column(
       children: [
         Container(
-          height: 48,
+          height: 40,
           width: 48,
           decoration: BoxDecoration(
-            color: const Color(0xFF1ABC9C),
+            color: const Color(0xFF1DBF60),
             borderRadius: BorderRadius.circular(10),
           ),
           alignment: Alignment.center,
@@ -100,7 +100,7 @@ class _SignupScreenState extends State<SignupScreen> {
         ),
         const SizedBox(height: 12),
         const Text(
-          'PETWAY',
+          'PEIWAY',
           style: TextStyle(
             fontSize: 22,
             fontWeight: FontWeight.w600,
@@ -158,9 +158,10 @@ class _SignupScreenState extends State<SignupScreen> {
           const SizedBox(height: 24),
 
           _buildTermsCheckbox(),
-          const SizedBox(height: 36),
+          const SizedBox(height: 24),
 
           _buildSignUpButton(),
+          const SizedBox(height: 24),
         ],
       ),
     );
@@ -222,7 +223,7 @@ class _SignupScreenState extends State<SignupScreen> {
       children: [
         Checkbox(
           value: _agreedToTerms,
-          activeColor: const Color(0xFF1ABC9C),
+          activeColor: const Color(0xFF1DBF60),
           onChanged: (v) => setState(() => _agreedToTerms = v!),
         ),
         Expanded(
@@ -234,7 +235,7 @@ class _SignupScreenState extends State<SignupScreen> {
                 TextSpan(
                   text: 'Terms of Use & Privacy Policy',
                   style: const TextStyle(
-                    color: Color(0xFF1ABC9C),
+                    color: Color(0xFF1DBF60),
                     decoration: TextDecoration.underline,
                   ),
                   recognizer: TapGestureRecognizer()..onTap = () {},
@@ -253,8 +254,8 @@ class _SignupScreenState extends State<SignupScreen> {
       child: ElevatedButton(
         onPressed: _isLoading ? null : _handleSignUp,
         style: ElevatedButton.styleFrom(
-          backgroundColor: const Color(0xFF1ABC9C),
-          padding: const EdgeInsets.symmetric(vertical: 16),
+          backgroundColor: const Color(0xFF1DBF60),
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 16),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(28),
           ),
