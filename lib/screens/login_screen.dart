@@ -91,10 +91,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   void _handleForgotPassword() {
     // TODO: Navigate to forgot password screen
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => const ForgotPasswordScreen()),
-    );
+    Navigator.pushNamed(context, "/forgotpassword_screen");
   }
 
   void _handleSignUp() {
@@ -396,22 +393,6 @@ class _LoginScreenState extends State<LoginScreen> {
           const SizedBox(height: 20),
         ],
       ),
-    );
-  }
-}
-
-// Placeholder screens for navigation
-class ForgotPasswordScreen extends StatelessWidget {
-  const ForgotPasswordScreen({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Forgot Password'),
-        backgroundColor: const Color(0xFF1DBF60),
-      ),
-      body: Center(child: Text('Forgot Password Screen - TODO')),
     );
   }
 }

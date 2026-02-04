@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 
-class PetwayResetPasswordScreen extends StatefulWidget {
-  const PetwayResetPasswordScreen({Key? key}) : super(key: key);
+class ResetPasswordScreen extends StatefulWidget {
+  const ResetPasswordScreen({Key? key}) : super(key: key);
 
   @override
-  State<PetwayResetPasswordScreen> createState() =>
-      _PetwayResetPasswordScreenState();
+  State<ResetPasswordScreen> createState() => _ResetPasswordScreenState();
 }
 
-class _PetwayResetPasswordScreenState extends State<PetwayResetPasswordScreen> {
+class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
   final _formKey = GlobalKey<FormState>();
   final _newPasswordController = TextEditingController();
   final _confirmPasswordController = TextEditingController();
