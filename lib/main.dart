@@ -5,6 +5,7 @@ import 'splash_screen.dart';
 // import 'screens/login_screen.dart';
 import "screens/discover_onboarding.dart";
 import "screens/login_screen.dart";
+import "screens/signup_screen.dart";
 
 void main() {
   runApp(const PeiwayApp());
@@ -123,6 +124,7 @@ class PeiwayApp extends StatelessWidget {
         '/': (context) => const SplashScreen(),
         '/discover_onboarding': (context) => const DiscoverOnboarding(),
         '/login_screen': (context) => const LoginScreen(),
+        '/signup_screen': (context) => const SignupScreen(),
       },
       initialRoute: '/',
     );

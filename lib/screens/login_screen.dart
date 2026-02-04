@@ -99,10 +99,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   void _handleSignUp() {
     // TODO: Navigate to sign up screen
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => const SignUpScreen()),
-    );
+    Navigator.pushNamed(context, "/signup_screen");
   }
 
   @override
@@ -415,21 +412,6 @@ class ForgotPasswordScreen extends StatelessWidget {
         backgroundColor: const Color(0xFF1DBF60),
       ),
       body: Center(child: Text('Forgot Password Screen - TODO')),
-    );
-  }
-}
-
-class SignUpScreen extends StatelessWidget {
-  const SignUpScreen({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Sign Up'),
-        backgroundColor: const Color(0xFF1DBF60),
-      ),
-      body: Center(child: Text('Sign Up Screen - TODO')),
     );
   }
 }
