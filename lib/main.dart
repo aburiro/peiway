@@ -126,7 +126,7 @@ class PeiwayApp extends StatelessWidget {
         '/discover_onboarding': (context) => const DiscoverOnboarding(),
         '/findbest_routes_onboarding': (context) =>
             const FindBestRoutesOnboarding(),
-        'ride_onboarding': (context) => const RideOnboarding(),
+        '/ride_onboarding': (context) => const RideOnboarding(),
         '/login_screen': (context) => const LoginScreen(),
       },
       initialRoute: '/',

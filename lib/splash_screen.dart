@@ -62,7 +62,7 @@ class _SplashScreenState extends State<SplashScreen>
     Future.delayed(const Duration(seconds: 3), () {
       if (mounted) {
         // Navigate to your next screen (onboarding or login)
-        Navigator.of(context).pushReplacementNamed('/onboarding');
+        Navigator.of(context).pushReplacementNamed('/discover_onboarding');
         // Or use: Navigator.of(context).pushReplacementNamed('/login');
       }
     });
