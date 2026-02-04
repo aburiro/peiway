@@ -101,7 +101,7 @@ class _DiscoverOnboardingState extends State<DiscoverOnboarding> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   GestureDetector(
-                    onTap: () => Navigator.pop(context),
+                    onTap: () => Navigator.pushNamed(context, '/login_screen'),
                     child: const Text(
                       'Skip',
                       style: TextStyle(
@@ -119,7 +119,10 @@ class _DiscoverOnboardingState extends State<DiscoverOnboarding> {
                           curve: Curves.easeInOut,
                         );
                       } else {
-                        Navigator.pop(context);
+                        Navigator.pushNamed(
+                          context,
+                          '/findbest_routes_onboarding',
+                        );
                       }
                     },
                     child: const Text(

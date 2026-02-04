@@ -134,7 +134,7 @@ class _FindBestRoutesOnboardingState extends State<FindBestRoutesOnboarding>
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   GestureDetector(
-                    onTap: widget.onSkip ?? () => Navigator.pop(context),
+                    onTap: () => Navigator.pushNamed(context, '/login_screen'),
                     child: const Text(
                       'Skip',
                       style: TextStyle(
@@ -145,7 +145,8 @@ class _FindBestRoutesOnboardingState extends State<FindBestRoutesOnboarding>
                     ),
                   ),
                   GestureDetector(
-                    onTap: widget.onNext ?? () {},
+                    onTap: () =>
+                        Navigator.pushNamed(context, '/ride_onboarding'),
                     child: const Text(
                       'Next',
                       style: TextStyle(
