@@ -119,10 +119,7 @@ class _DiscoverOnboardingState extends State<DiscoverOnboarding> {
                           curve: Curves.easeInOut,
                         );
                       } else {
-                        Navigator.pushNamed(
-                          context,
-                          '/findbest_routes_onboarding',
-                        );
+                        Navigator.pushNamed(context, '/login_screen');
                       }
                     },
                     child: const Text(
