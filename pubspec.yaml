@@ -47,12 +47,10 @@ dev_dependencies:
   # rules and activating additional ones.
   
   
-  flutter_map: ^6.0.0
-  http: ^1.1.0
-  
-  
-  google_maps_flutter: ^2.5.0
-  geolocator: ^11.0.0
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+  geolocator: ^11.1.0
+  http: ^1.2.1
   permission_handler: ^11.3.0
   flutter_lints: ^6.0.0
   flutter_launcher_icons: ^0.13.1
