@@ -9,6 +9,8 @@ import "screens/signup_screen.dart";
 import "screens/forgotpassword_screen.dart";
 import "screens/otp_screen.dart";
 import "screens/reset_password_screen.dart";
+import "screens/location_permission_screen.dart";
+import "screens/home_screen.dart";
 
 void main() {
   runApp(const PeiwayApp());
@@ -131,6 +133,8 @@ class PeiwayApp extends StatelessWidget {
         '/forgotpassword_screen': (context) => ForgotPasswordScreen(),
         '/opt_screen': (context) => OtpScreen(),
         '/reset_password_screen': (context) => ResetPasswordScreen(),
+        '/location_permission_screen': (context) => LocationPermissionScreen(),
+        '/home_screen': (context) => HomeScreen(),
       },
       initialRoute: '/',
     );
