@@ -44,6 +44,10 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
+  flutter_map: ^4.2.0
+  latlong2: ^0.9.0
+
+  webview_flutter: ^4.12.0
   google_maps_flutter: ^2.5.0
   geolocator: ^11.0.0
   permission_handler: ^11.3.0

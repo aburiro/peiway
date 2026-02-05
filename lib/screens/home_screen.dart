@@ -4,6 +4,8 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 // ignore: depend_on_referenced_packages
 import 'package:geolocator/geolocator.dart';
 
+import 'package:webview_flutter/webview_flutter.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
