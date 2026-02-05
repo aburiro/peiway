@@ -8,12 +8,12 @@ class FindBestRoutesOnboarding extends StatefulWidget {
   final VoidCallback? onSkip;
 
   const FindBestRoutesOnboarding({
-    Key? key,
+    super.key,
     this.currentPage = 1,
     this.totalPages = 3,
     this.onNext,
     this.onSkip,
-  }) : super(key: key);
+  });
 
   @override
   State<FindBestRoutesOnboarding> createState() =>
@@ -169,7 +169,7 @@ class _FindBestRoutesOnboardingState extends State<FindBestRoutesOnboarding>
 class PageIndicator extends StatelessWidget {
   final bool isActive;
 
-  const PageIndicator({Key? key, required this.isActive}) : super(key: key);
+  const PageIndicator({super.key, required this.isActive});
 
   @override
   Widget build(BuildContext context) {

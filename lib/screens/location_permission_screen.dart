@@ -3,7 +3,7 @@ import 'package:geolocator/geolocator.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 class LocationPermissionScreen extends StatelessWidget {
-  const LocationPermissionScreen({Key? key}) : super(key: key);
+  const LocationPermissionScreen({super.key});
 
   Future<void> _enableLocation(BuildContext context) async {
     // Step 1: Check permission

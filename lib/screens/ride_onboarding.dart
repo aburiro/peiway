@@ -8,12 +8,12 @@ class RideOnboarding extends StatefulWidget {
   final VoidCallback? onSkip;
 
   const RideOnboarding({
-    Key? key,
+    super.key,
     this.currentPage = 2,
     this.totalPages = 3,
     this.onNext,
     this.onSkip,
-  }) : super(key: key);
+  });
 
   @override
   State<RideOnboarding> createState() => _RideOnboardingState();

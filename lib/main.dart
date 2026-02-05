@@ -17,7 +17,7 @@ void main() {
 }
 
 class PeiwayApp extends StatelessWidget {
-  const PeiwayApp({Key? key}) : super(key: key);
+  const PeiwayApp({super.key});
 
   @override
   Widget build(BuildContext context) {

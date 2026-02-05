@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 
 class DiscoverOnboarding extends StatefulWidget {
-  const DiscoverOnboarding({Key? key}) : super(key: key);
+  const DiscoverOnboarding({super.key});
 
   @override
   State<DiscoverOnboarding> createState() => _DiscoverOnboardingState();
@@ -150,7 +150,7 @@ class OnboardingItem {
 
 // Compass Icon
 class CompassIcon extends StatelessWidget {
-  const CompassIcon({Key? key}) : super(key: key);
+  const CompassIcon({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -316,7 +316,7 @@ class CompassPainter extends CustomPainter {
 
 // Network Icon
 class NetworkIcon extends StatelessWidget {
-  const NetworkIcon({Key? key}) : super(key: key);
+  const NetworkIcon({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -377,7 +377,7 @@ class NetworkPainter extends CustomPainter {
 
 // Explore Icon
 class ExploreIcon extends StatelessWidget {
-  const ExploreIcon({Key? key}) : super(key: key);
+  const ExploreIcon({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -6,8 +6,7 @@ import 'reset_password_screen.dart';
 class OtpScreen extends StatefulWidget {
   final String phoneNumber;
 
-  const OtpScreen({Key? key, this.phoneNumber = '+1 (123) 456-7890'})
-    : super(key: key);
+  const OtpScreen({super.key, this.phoneNumber = '+1 (123) 456-7890'});
 
   @override
   State<OtpScreen> createState() => _OtpScreenState();
