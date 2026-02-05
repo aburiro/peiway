@@ -33,7 +33,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
             content: Text('Code sent to your phone!'),
-            backgroundColor: Colors.green,
+            backgroundColor: Color(0xFF1DBF60),
           ),
         );
         // Navigate to OTP screen
@@ -126,7 +126,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
         Container(
           padding: const EdgeInsets.all(12),
           decoration: BoxDecoration(
-            color: const Color(0xFF1ABC9C),
+            color: const Color(0xFF1DBF60),
             borderRadius: BorderRadius.circular(8),
           ),
           child: const Text(
@@ -219,7 +219,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
                     borderSide: const BorderSide(
-                      color: Color(0xFF1ABC9C),
+                      color: Color(0xFF1DBF60),
                       width: 2,
                     ),
                   ),
@@ -254,7 +254,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
       child: ElevatedButton(
         onPressed: _isLoading ? null : _handleSendCode,
         style: ElevatedButton.styleFrom(
-          backgroundColor: const Color(0xFF1ABC9C),
+          backgroundColor: const Color(0xFF1DBF60),
           disabledBackgroundColor: Colors.grey.shade400,
           padding: const EdgeInsets.symmetric(vertical: 16),
           shape: RoundedRectangleBorder(
@@ -297,7 +297,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
           child: const Text(
             'LOG IN',
             style: TextStyle(
-              color: Color(0xFF1ABC9C),
+              color: Color(0xFF1DBF60),
               fontSize: 14,
               fontWeight: FontWeight.w600,
               decoration: TextDecoration.underline,
