@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'otp_screen.dart';
 
 class ForgotPasswordScreen extends StatefulWidget {
   const ForgotPasswordScreen({Key? key}) : super(key: key);
@@ -35,7 +36,14 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
             backgroundColor: Colors.green,
           ),
         );
-        // Navigate to verification screen or next step
+        // Navigate to OTP screen
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) =>
+                OtpScreen(phoneNumber: '+1 ${_phoneController.text}'),
+          ),
+        );
       });
     }
   }
