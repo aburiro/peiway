@@ -50,7 +50,11 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
           ),
         );
         // Navigate to login screen
-        Navigator.pushNamedAndRemoveUntil(context, '/login', (route) => false);
+        Navigator.pushNamedAndRemoveUntil(
+          context,
+          '/login_screen',
+          (route) => false,
+        );
       });
     }
   }
