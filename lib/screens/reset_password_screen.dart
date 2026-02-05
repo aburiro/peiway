@@ -64,7 +64,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: const Color(0xFF1ABC9C),
+        backgroundColor: const Color(0xFF1DBF60),
         elevation: 0,
         leading: GestureDetector(
           onTap: () => Navigator.pop(context),
@@ -171,11 +171,11 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
       width: 80,
       height: 80,
       decoration: BoxDecoration(
-        color: const Color(0xFF1ABC9C).withOpacity(0.1),
+        color: const Color(0xFF1DBF60).withOpacity(0.1),
         borderRadius: BorderRadius.circular(40),
       ),
       child: const Center(
-        child: Icon(Icons.check_circle, color: Color(0xFF1ABC9C), size: 60),
+        child: Icon(Icons.check_circle, color: Color(0xFF1DBF60), size: 60),
       ),
     );
   }
@@ -192,7 +192,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
       children: [
         Row(
           children: [
-            const Icon(Icons.lock, color: Color(0xFF1ABC9C), size: 18),
+            const Icon(Icons.lock, color: Color(0xFF1DBF60), size: 18),
             const SizedBox(width: 8),
             Text(
               label,
@@ -222,7 +222,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
             ),
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(8),
-              borderSide: const BorderSide(color: Color(0xFF1ABC9C), width: 2),
+              borderSide: const BorderSide(color: Color(0xFF1DBF60), width: 2),
             ),
             errorBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(8),
@@ -258,7 +258,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
       child: ElevatedButton(
         onPressed: _isLoading ? null : _handleResetPassword,
         style: ElevatedButton.styleFrom(
-          backgroundColor: const Color(0xFF1ABC9C),
+          backgroundColor: const Color(0xFF1DBF60),
           disabledBackgroundColor: Colors.grey.shade400,
           padding: const EdgeInsets.symmetric(vertical: 16),
           shape: RoundedRectangleBorder(
