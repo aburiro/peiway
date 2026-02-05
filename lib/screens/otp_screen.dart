@@ -1,6 +1,7 @@
 // ignore_for_file: unused_element
 
 import 'package:flutter/material.dart';
+import 'reset_password_screen.dart';
 
 class OtpScreen extends StatefulWidget {
   final String phoneNumber;
@@ -88,7 +89,11 @@ class _OtpScreenState extends State<OtpScreen> {
           backgroundColor: Colors.green,
         ),
       );
-      // Navigate to next screen (reset password screen)
+      // Navigate to reset password screen
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => const ResetPasswordScreen()),
+      );
     });
   }
 
