@@ -67,7 +67,7 @@ class _OtpScreenState extends State<OtpScreen> {
     if (otp.length < 4) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: Text('Please enter all 4 digits'),
+          content: Text('Please enter all 6 digits'),
           backgroundColor: Colors.red,
         ),
       );
@@ -138,7 +138,7 @@ class _OtpScreenState extends State<OtpScreen> {
       backgroundColor: Colors.white,
       body: SafeArea(
         child: SingleChildScrollView(
-          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 20),
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -154,7 +154,7 @@ class _OtpScreenState extends State<OtpScreen> {
                   ),
                 ),
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 15),
 
               // Petway Logo
               _buildLogo(),
@@ -169,7 +169,7 @@ class _OtpScreenState extends State<OtpScreen> {
                   fontWeight: FontWeight.w600,
                 ),
               ),
-              const SizedBox(height: 12),
+              const SizedBox(height: 10),
 
               // Description
               const Text(
@@ -192,15 +192,15 @@ class _OtpScreenState extends State<OtpScreen> {
                   fontWeight: FontWeight.w500,
                 ),
               ),
-              const SizedBox(height: 32),
+              const SizedBox(height: 26),
 
               // OTP Input Fields
               _buildOtpFields(),
-              const SizedBox(height: 16),
+              const SizedBox(height: 10),
 
               // Resend Code Timer
               _buildResendCodeSection(),
-              const SizedBox(height: 30),
+              const SizedBox(height: 35),
 
               // Number Keypad
               _buildNumberKeypad(),
@@ -222,7 +222,7 @@ class _OtpScreenState extends State<OtpScreen> {
         Container(
           padding: const EdgeInsets.all(10),
           decoration: BoxDecoration(
-            color: const Color(0xFF1ABC9C),
+            color: const Color(0xFF1DBF60),
             borderRadius: BorderRadius.circular(6),
           ),
           child: const Text(
@@ -236,7 +236,7 @@ class _OtpScreenState extends State<OtpScreen> {
         ),
         const SizedBox(width: 8),
         const Text(
-          'PETWAY',
+          'PEIWAY',
           style: TextStyle(
             color: Colors.grey,
             fontSize: 18,
@@ -252,7 +252,7 @@ class _OtpScreenState extends State<OtpScreen> {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: List.generate(
-        6,
+        4,
         (index) => Container(
           width: 50,
           height: 50,
@@ -260,7 +260,7 @@ class _OtpScreenState extends State<OtpScreen> {
           decoration: BoxDecoration(
             border: Border.all(
               color: _otpControllers[index].text.isNotEmpty
-                  ? const Color(0xFF1ABC9C)
+                  ? const Color(0xFF1DBF60)
                   : const Color(0xFFE0E0E0),
               width: 2,
             ),
@@ -303,7 +303,7 @@ class _OtpScreenState extends State<OtpScreen> {
         Text(
           '00:${_remainingSeconds.toString().padLeft(2, '0')}',
           style: const TextStyle(
-            color: Color(0xFF1ABC9C),
+            color: Color(0xFF1DBF60),
             fontSize: 13,
             fontWeight: FontWeight.w600,
           ),
@@ -344,7 +344,7 @@ class _OtpScreenState extends State<OtpScreen> {
             _buildKeypadButton('9'),
           ],
         ),
-        const SizedBox(height: 12),
+        const SizedBox(height: 10),
         // Row 4
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -390,7 +390,7 @@ class _OtpScreenState extends State<OtpScreen> {
           child: ElevatedButton(
             onPressed: _isLoading ? null : _handleContinue,
             style: ElevatedButton.styleFrom(
-              backgroundColor: const Color(0xFF1ABC9C),
+              backgroundColor: const Color(0xFF1DBF60),
               disabledBackgroundColor: Colors.grey.shade400,
               padding: const EdgeInsets.symmetric(vertical: 16),
               shape: RoundedRectangleBorder(
