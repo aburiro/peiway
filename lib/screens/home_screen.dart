@@ -130,7 +130,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Geoapify Map")),
+      appBar: AppBar(title: const Text("Peiway Map")),
       body: Stack(
         children: [
           FlutterMap(
