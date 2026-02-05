@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+// ignore: depend_on_referenced_packages
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+// ignore: depend_on_referenced_packages
 import 'package:geolocator/geolocator.dart';
 
 class HomeScreen extends StatefulWidget {
