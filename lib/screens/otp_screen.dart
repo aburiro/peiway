@@ -23,8 +23,8 @@ class _OtpScreenState extends State<OtpScreen> {
   @override
   void initState() {
     super.initState();
-    _otpControllers = List.generate(6, (_) => TextEditingController());
-    _focusNodes = List.generate(6, (_) => FocusNode());
+    _otpControllers = List.generate(4, (_) => TextEditingController());
+    _focusNodes = List.generate(4, (_) => FocusNode());
     _startResendTimer();
   }
 
@@ -64,10 +64,10 @@ class _OtpScreenState extends State<OtpScreen> {
 
   void _handleContinue() {
     final otp = _otpControllers.map((c) => c.text).join();
-    if (otp.length < 6) {
+    if (otp.length < 4) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: Text('Please enter all 6 digits'),
+          content: Text('Please enter all 4 digits'),
           backgroundColor: Colors.red,
         ),
       );
@@ -154,11 +154,11 @@ class _OtpScreenState extends State<OtpScreen> {
                   ),
                 ),
               ),
-              const SizedBox(height: 24),
+              const SizedBox(height: 20),
 
               // Petway Logo
               _buildLogo(),
-              const SizedBox(height: 40),
+              const SizedBox(height: 30),
 
               // Heading
               const Text(
@@ -200,11 +200,11 @@ class _OtpScreenState extends State<OtpScreen> {
 
               // Resend Code Timer
               _buildResendCodeSection(),
-              const SizedBox(height: 40),
+              const SizedBox(height: 30),
 
               // Number Keypad
               _buildNumberKeypad(),
-              const SizedBox(height: 24),
+              const SizedBox(height: 20),
 
               // Continue Button
               _buildContinueButton(),
