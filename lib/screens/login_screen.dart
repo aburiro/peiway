@@ -65,7 +65,7 @@ class _LoginScreenState extends State<LoginScreen> {
         );
 
         // Replace with your home screen route
-        // Navigator.of(context).pushReplacementNamed('/home');
+         Navigator.pushNamed(context, "/location_permission_screen");
       }
     } catch (e) {
       setState(() {

@@ -34,7 +34,7 @@ class LocationPermissionScreen extends StatelessWidget {
       debugPrint("Lat: ${position.latitude}, Lng: ${position.longitude}");
 
       // Navigate to next screen
-      // Navigator.pushReplacementNamed(context, '/home');
+      Navigator.pushNamed(context, "/home_screen");
     }
   }
 
