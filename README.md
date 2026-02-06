@@ -1,10 +1,28 @@
-🚀 Peiway MapPeiway is a modern, high-performance Flutter map application that integrates real-time GPS tracking, location search, and dynamic map styling using the Geoapify API and OpenStreetMap.✨ Key Features📍 Real-time Geolocation: Accurately track your current position with high-precision GPS.🔍 Smart Search: Find any city, landmark, or street globally using the integrated Geoapify Geocoding API.🎨 Dynamic Map Styles: Toggle between multiple professional map skins (Carto, Dark, Positron, and Voyager) via a sleek sidebar.📌 Interactive Markers: Custom markers for searched locations and current positions with built-in tooltips.📂 Sidebar Navigation: A clean, organized Drawer menu for app settings and navigation.🛠 Tech StackThis project leverages the best-in-class Flutter packages:flutter_map: A versatile mapping framework for Flutter.latlong2: A lightweight library for latitude/longitude calculations.geolocator: Modern geolocoding and GPS tracking.http: For seamless API communication.Geoapify Tiles: High-quality vector and raster map tiles.🚀 Getting Started1. PrerequisitesFlutter SDK: ^3.3.0 or higherA Geoapify API Key (Get one for free at geoapify.com)2. InstallationClone the repository and install dependencies:Bashgit clone https://github.com/aburiro/peiway.git
-cd peiway
-flutter pub get
-3. Permissions SetupBefore running the app, ensure you have configured platform permissions:AndroidAdd these to android/app/src/main/AndroidManifest.xml:XML<uses-permission name="android.permission.ACCESS_FINE_LOCATION" />
+🚀 Peiway Map
+Peiway is a modern, high-performance Flutter map application that integrates real-time GPS tracking, location search, and dynamic map styling using the Geoapify API and OpenStreetMap.
+✨ Key Features📍 
+Real-time Geolocation: Accurately track your current position with high-precision GPS.
+🔍 Smart Search: Find any city, landmark, or street globally using the integrated Geoapify Geocoding API.🎨 Dynamic Map Styles: Toggle between multiple professional map skins (Carto, Dark, Positron, and Voyager) via a sleek sidebar.
+📌 Interactive Markers: Custom markers for searched locations and current positions with built-in tooltips.
+📂 Sidebar Navigation: A clean, organized Drawer menu for app settings and navigation.🛠 Tech StackThis project leverages the best-in-class Flutter packages:flutter_map: A versatile mapping framework for Flutter.latlong2: A lightweight library for latitude/longitude calculations.geolocator: Modern geolocoding and GPS tracking.http: For seamless API communication.Geoapify Tiles: High-quality vector and raster map tiles.
+🚀 Getting Started1.
+ PrerequisitesFlutter SDK: ^3.3.0 or higher
+ A Geoapify API Key (Get one for free at geoapify.com)
+ 2. InstallationClone the repository and install dependencies:Bashgit 
+ clone https://github.com/aburiro/peiway.git
+ cd peiway
+ flutter pub get
+3. Permissions SetupBefore running the app, ensure you have configured platform permissions:
+AndroidAdd these to android/app/src/main/AndroidManifest.xml:XML
+<uses-permission name="android.permission.ACCESS_FINE_LOCATION" />
 <uses-permission name="android.permission.ACCESS_COARSE_LOCATION" />
 <uses-permission name="android.permission.INTERNET"/>
-iOSAdd these to ios/Runner/Info.plist:XML<key>NSLocationWhenInUseUsageDescription</key>
+iOSAdd 
+these to ios/Runner/Info.plist:XM
+L<key>NSLocationWhenInUseUsageDescription</key>
 <string>Peiway needs access to your location for map tracking.</string>
-⚙️ ConfigurationOpen lib/screens/home_screen.dart and locate the _apiKey variable. Replace it with your actual Geoapify key:Dartstatic const String _apiKey = 'YOUR_GEOAPIFY_API_KEY_HERE';
-📸 ScreenshotsMap ViewSidebar MenuSearch Results🤝 ContributingContributions, issues, and feature requests are welcome! Feel free to check the issues page.Fork the ProjectCreate your Feature Branch (git checkout -b feature/AmazingFeature)Commit your Changes (git commit -m 'Add some AmazingFeature')Push to the Branch (git push origin feature/AmazingFeature)Open a Pull Request📄 LicenseDistributed under the MIT License. See LICENSE for more information.
+⚙️ ConfigurationOpen lib/screens/home_screen.dart and locate the _apiKey variable.
+ Replace it with your actual Geoapify key:Dartstatic const String _apiKey = 'YOUR_GEOAPIFY_API_KEY_HERE';
+📸 ScreenshotsMap ViewSidebar MenuSearch Results
+🤝 ContributingContributions, issues, and feature requests are welcome! Feel free to check the issues page.Fork the ProjectCreate your Feature Branch (git checkout -b feature/AmazingFeature)Commit your Changes (git commit -m 'Add some AmazingFeature')Push to the Branch (git push origin feature/AmazingFeature)Open a Pull Request
+📄 LicenseDistributed under the MIT License. See LICENSE for more information.
