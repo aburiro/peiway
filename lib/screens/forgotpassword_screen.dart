@@ -140,7 +140,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
         ),
         const SizedBox(height: 12),
         const Text(
-          'PETWAY',
+          'PEIWAY',
           style: TextStyle(
             color: Colors.grey,
             fontSize: 24,
