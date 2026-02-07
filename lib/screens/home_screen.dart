@@ -6,6 +6,7 @@ import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart'; // FIXED: Correct import filename
 import 'package:geolocator/geolocator.dart';
 import 'package:http/http.dart' as http;
+import 'secrets.dart'; // Importing the API key
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -19,7 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final TextEditingController _searchController = TextEditingController();
 
   /// Geoapify Configuration
-  static const String _apiKey = '452b27c765e840358ee7ad7ee57339e3';
+  static const String _apiKey = GEOAPIFY_API_KEY;
 
   // Map Styles available in Geoapify
   static const Map<String, String> _mapStyles = {
