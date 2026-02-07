@@ -1,28 +1,92 @@
-🚀 Peiway Map
-Peiway is a modern, high-performance Flutter map application that integrates real-time GPS tracking, location search, and dynamic map styling using the Geoapify API and OpenStreetMap.
-✨ Key Features📍 
-Real-time Geolocation: Accurately track your current position with high-precision GPS.
-🔍 Smart Search: Find any city, landmark, or street globally using the integrated Geoapify Geocoding API.🎨 Dynamic Map Styles: Toggle between multiple professional map skins (Carto, Dark, Positron, and Voyager) via a sleek sidebar.
-📌 Interactive Markers: Custom markers for searched locations and current positions with built-in tooltips.
-📂 Sidebar Navigation: A clean, organized Drawer menu for app settings and navigation.🛠 Tech StackThis project leverages the best-in-class Flutter packages:flutter_map: A versatile mapping framework for Flutter.latlong2: A lightweight library for latitude/longitude calculations.geolocator: Modern geolocoding and GPS tracking.http: For seamless API communication.Geoapify Tiles: High-quality vector and raster map tiles.
-🚀 Getting Started1.
- PrerequisitesFlutter SDK: ^3.3.0 or higher
- A Geoapify API Key (Get one for free at geoapify.com)
- 2. InstallationClone the repository and install dependencies:Bashgit 
- clone https://github.com/aburiro/peiway.git
- cd peiway
- flutter pub get
-3. Permissions SetupBefore running the app, ensure you have configured platform permissions:
-AndroidAdd these to android/app/src/main/AndroidManifest.xml:XML
-<uses-permission name="android.permission.ACCESS_FINE_LOCATION" />
-<uses-permission name="android.permission.ACCESS_COARSE_LOCATION" />
-<uses-permission name="android.permission.INTERNET"/>
-iOSAdd 
-these to ios/Runner/Info.plist:XM
-L<key>NSLocationWhenInUseUsageDescription</key>
-<string>Peiway needs access to your location for map tracking.</string>
-⚙️ ConfigurationOpen lib/screens/home_screen.dart and locate the _apiKey variable.
- Replace it with your actual Geoapify key:Dartstatic const String _apiKey = 'YOUR_GEOAPIFY_API_KEY_HERE';
-📸 ScreenshotsMap ViewSidebar MenuSearch Results
-🤝 ContributingContributions, issues, and feature requests are welcome! Feel free to check the issues page.Fork the ProjectCreate your Feature Branch (git checkout -b feature/AmazingFeature)Commit your Changes (git commit -m 'Add some AmazingFeature')Push to the Branch (git push origin feature/AmazingFeature)Open a Pull Request
-📄 LicenseDistributed under the MIT License. See LICENSE for more information.
+# 🌍 Peiway
+
+Peiway is a Flutter-based mobile application designed to help tourists and local users explore points of interest using real-time GPS location and interactive maps. The application integrates Geoapify map services to provide smart place search, dynamic map styles, and accurate location tracking, offering a smooth and user-friendly navigation experience on both Android and iOS platforms.
+
+## 🚀 Features
+
+* 📍 Real-time GPS location tracking
+* 🔎 Search for cities, landmarks, and points of interest
+* 🗺️ Interactive maps with multiple map styles
+* 📌 Custom markers and popups
+* 📱 Clean and responsive Flutter UI
+* 🌐 Cross-platform support (Android & iOS)
+
+## 🛠️ Technologies Used
+
+* **Flutter** – Cross-platform mobile development framework
+* **Dart** – Programming language
+* **Geoapify API** – Maps, tiles, and location services
+* **flutter_map** – Map rendering
+* **geolocator** – Device location access
+* **http** – API communication
+
+## 📋 Prerequisites
+
+Before running this project, make sure you have:
+
+* Flutter SDK (version 3.3.0 or higher)
+* Android Studio or VS Code
+* Android emulator or physical device
+* A free Geoapify API key
+
+## 📥 Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/aburiro/peiway.git
+cd peiway
+```
+
+2. Install dependencies:
+
+```bash
+flutter pub get
+```
+
+3. Add your Geoapify API key:
+
+Open the relevant Dart file and replace:
+
+```dart
+YOUR_GEOAPIFY_API_KEY
+```
+
+with your actual API key.
+
+## 📱 Platform Permissions
+
+### Android
+
+Add the following permission in `AndroidManifest.xml`:
+
+```xml
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+```
+
+### iOS
+
+Add the following to `Info.plist`:
+
+```xml
+<key>NSLocationWhenInUseUsageDescription</key>
+<string>This app requires location access to show nearby places.</string>
+```
+
+## ▶️ Run the App
+
+```bash
+flutter run
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Please fork the repository, create a new branch, commit your changes, and open a pull request.
+
+## 📄 License
+
+This project is open-source and available under the MIT License.
+
+---
+
+Developed with ❤️ using Flutter.
