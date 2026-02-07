@@ -149,7 +149,7 @@ class _LoginScreenState extends State<LoginScreen> {
         const SizedBox(width: 12),
         // Brand Name
         const Text(
-          'PETWAY',
+          'PEIWAY',
           style: TextStyle(
             fontSize: 28,
             fontWeight: FontWeight.w700,
