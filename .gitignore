@@ -49,3 +49,5 @@ app.*.map.json
 .env
 ./lib/screens/secrets.dart
 "/lib/screens/secrets.dart"
+./lib/screens/secret.dart
+"/lib/screens/secret.dart"
