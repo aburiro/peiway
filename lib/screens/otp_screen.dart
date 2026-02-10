@@ -314,7 +314,7 @@ class _OtpScreenState extends State<OtpScreen> {
   Widget _buildNumberKeypad() {
     return Column(
       children: [
-        // Row 1
+        // Row
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
