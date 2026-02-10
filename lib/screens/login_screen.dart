@@ -184,7 +184,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 controller: _usernameController,
                 enabled: !_isLoading,
                 decoration: InputDecoration(
-                  hintText: 'john.doe',
+                  hintText: 'Enter your username',
                   hintStyle: const TextStyle(
                     color: Color(0xFFBDBDBD),
                     fontSize: 14,
