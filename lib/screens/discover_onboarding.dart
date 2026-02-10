@@ -127,7 +127,7 @@ class _DiscoverOnboardingState extends State<DiscoverOnboarding> {
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w500,
-                        color: Color(0xFF757575),
+                        color: Color.fromARGB(255, 49, 49, 49),
                       ),
                     ),
                   ),
