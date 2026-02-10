@@ -25,9 +25,8 @@ class _HomeScreenState extends State<HomeScreen> {
   // Map Styles available in Geoapify
   static const Map<String, String> _mapStyles = {
     'Carto': 'carto',
-    'Carto Dark': 'carto-dark',
+
     'Positron': 'positron',
-    'Voyager': 'voyager',
   };
 
   String _currentStyle = 'carto';

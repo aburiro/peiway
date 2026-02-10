@@ -124,7 +124,7 @@ class _SignupScreenState extends State<SignupScreen> {
                 child: _buildTextField(
                   controller: _firstNameController,
                   label: 'First name',
-                  hint: 'John',
+                  hint: 'Enter your first name',
                 ),
               ),
               const SizedBox(width: 16),
@@ -132,7 +132,7 @@ class _SignupScreenState extends State<SignupScreen> {
                 child: _buildTextField(
                   controller: _lastNameController,
                   label: 'Last name',
-                  hint: 'Doe',
+                  hint: 'Enter your last name',
                 ),
               ),
             ],
@@ -142,14 +142,14 @@ class _SignupScreenState extends State<SignupScreen> {
           _buildTextField(
             controller: _usernameController,
             label: 'Username',
-            hint: 'john.doe',
+            hint: 'Enter your username',
           ),
           const SizedBox(height: 24),
 
           _buildTextField(
             controller: _emailController,
             label: 'Email address',
-            hint: 'johndoe@gmail.com',
+            hint: 'Enter Email Address',
             keyboardType: TextInputType.emailAddress,
           ),
           const SizedBox(height: 24),
